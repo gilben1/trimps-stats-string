@@ -38,8 +38,8 @@ importButton.addEventListener('click', () => {
     convertedData = JSON.parse(convertedData);
     
     // Pull the stats we want out
-    let u1hze = convertedData.global.highestLevelCleared;
-    let u2hze = convertedData.global.highestRadonLevelCleared;
+    let u1hze = convertedData.global.highestLevelCleared + 1;
+    let u2hze = convertedData.global.highestRadonLevelCleared + 1;
     let totalHe = sigfig(convertedData.global.totalHeliumEarned);
     let totalRd = sigfig(convertedData.global.totalRadonEarned);
     let achievePercent = sigfig(convertedData.global.achievementBonus);
